@@ -1,0 +1,44 @@
+{
+	"name": "root",
+	"version": "0.0.0",
+	"private": true,
+	"license": "MIT",
+	"scripts": {
+		"build": "turbo run build",
+		"clean": "pnpm run clean:builds && pnpm run clean:modules",
+		"clean:builds": "turbo run clean",
+		"clean:modules": "shx rm -rf **/node_modules",
+		"fix": "eslint **/*.{ts,json} --cache --color --fix",
+		"lint": "eslint **/*.{ts,json} --cache --color",
+		"prod": "turbo run prod fix depcheck",
+		"release": "pnpm run prod && semantic-release",
+		"depcheck": "turbo run depcheck"
+	},
+	"devDependencies": {
+		"@types/node": "^18.0.2",
+		"depcheck": "^1.4.3",
+		"eslint": "^8.19.0",
+		"shx": "^0.3.4",
+		"turbo": "^1.3.1",
+		"typescript": "^4.7.4",
+		"@snickbit/semantic-release": "^0.0.1",
+		"@semantic-release-plus/docker": "^3.1.2",
+		"semantic-release-plus": "^19.0.2"
+	},
+	"engines": {
+		"node": ">= 12"
+	},
+	"release": {
+		"extends": [
+			"@snickbit/semantic-release"
+		],
+		"plugins": [
+			[
+				"@semantic-release-plus/docker",
+				{
+					"name": "snickbit/polymine"
+				}
+			]
+		]
+	}
+}

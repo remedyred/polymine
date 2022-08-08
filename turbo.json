@@ -1,0 +1,17 @@
+{
+	"$schema": "https://turborepo.org/schema.json",
+	"pipeline": {
+		"//#lint": {
+			"outputs": []
+		},
+		"//#fix": {
+			"outputs": []
+		},
+		"//#depcheck": {
+			"outputs": []
+		},
+		"clean": {
+			"outputs": []
+		}
+	}
+}

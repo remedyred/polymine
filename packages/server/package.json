@@ -1,0 +1,52 @@
+{
+	"name": "@snickbit/polymine",
+	"version": "0.0.4",
+	"license": "MIT",
+	"private": true,
+	"main": "bin/polymine",
+	"bin": {
+		"polymine": "bin/polymine"
+	},
+	"files": [
+		"bin",
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"clean": "shx rm -rf bin",
+		"depcheck": "depcheck",
+		"prod": "pnpm run build --minify",
+		"restart": "nodemon bin/polymine --out:polymine=5",
+		"start": "node bin/polymine",
+		"watch": "pnpm run build --watch"
+	},
+	"dependencies": {
+		"@snickbit/node-cli": "^2.0.1",
+		"@snickbit/node-utilities": "^4.3.16",
+		"@snickbit/out": "^2.0.35",
+		"dockerode": "^3.3.2",
+		"raknet": "^1.8.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.0.2",
+		"depcheck": "^1.4.3",
+		"esbuild": "^0.14.48",
+		"nodemon": "^2.0.19",
+		"shx": "^0.3.4",
+		"tsup": "^6.1.3",
+		"typescript": "^4.7.4"
+	},
+	"engines": {
+		"node": ">= 12"
+	},
+	"tsup": {
+		"entry": [
+			"src/index.ts"
+		],
+		"clean": true,
+		"dts": false,
+		"format": [
+			"cjs"
+		]
+	}
+}
