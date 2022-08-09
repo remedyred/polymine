@@ -30,7 +30,6 @@
 	"devDependencies": {
 		"@types/node": "^18.0.2",
 		"depcheck": "^1.4.3",
-		"esbuild": "^0.14.48",
 		"nodemon": "^2.0.19",
 		"shx": "^0.3.4",
 		"tsup": "^6.1.3",
