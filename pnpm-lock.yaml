@@ -26,7 +26,7 @@ importers:
 
   packages/server:
     specifiers:
-      '@snickbit/node-cli': 2.0.2
+      '@snickbit/node-cli': 3.0.4
       '@snickbit/node-utilities': 4.4.5
       '@snickbit/out': 2.0.37
       '@types/node': 18.7.1
@@ -38,7 +38,7 @@ importers:
       tsup: 6.2.2
       typescript: 4.7.4
     dependencies:
-      '@snickbit/node-cli': 2.0.2
+      '@snickbit/node-cli': 3.0.4
       '@snickbit/node-utilities': 4.4.5
       '@snickbit/out': 2.0.37
       dockerode: 3.3.3
@@ -563,13 +563,13 @@ packages:
       - supports-color
     dev: true
 
-  /@snickbit/node-cli/2.0.2:
-    resolution: {integrity: sha512-AAvtvzmL+b9lqT0gIzjWR98MVE5TEVDTv1eFFqAvEB9g+A+3aBE1wgdxLPqndaQpDg20SpbMl/xlzG4o3er0zQ==}
+  /@snickbit/node-cli/3.0.4:
+    resolution: {integrity: sha512-z9trPbhQCoqh38ptSvwx0U6yZF1RCx6RnnSwEnJs63lSaYv2yCfCXzt0fwkn6GSG0127za+7szU5M4wRLVKj+g==}
     engines: {node: '>= 12'}
     dependencies:
       '@snickbit/node-utilities': 4.4.5
       '@snickbit/out': 2.0.37
-      '@snickbit/utilities': 3.2.1
+      '@snickbit/utilities': 3.3.0
       lilconfig: 2.0.6
       yargs-parser: 21.1.1
     dev: false
