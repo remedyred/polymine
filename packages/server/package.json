@@ -1,8 +1,8 @@
 {
 	"name": "@snickbit/polymine",
 	"version": "0.0.4",
-	"license": "MIT",
 	"private": true,
+	"license": "MIT",
 	"main": "bin/polymine",
 	"bin": {
 		"polymine": "bin/polymine"
