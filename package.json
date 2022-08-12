@@ -15,15 +15,15 @@
 		"depcheck": "turbo run depcheck"
 	},
 	"devDependencies": {
-		"@types/node": "^18.0.2",
-		"depcheck": "^1.4.3",
-		"eslint": "^8.19.0",
-		"shx": "^0.3.4",
-		"turbo": "^1.3.1",
-		"typescript": "^4.7.4",
+		"@types/node": "18.7.1",
+		"depcheck": "1.4.3",
+		"eslint": "8.21.0",
+		"shx": "0.3.4",
+		"turbo": "1.4.3",
+		"typescript": "4.7.4",
 		"@snickbit/semantic-release": "0.1.1",
-		"@semantic-release-plus/docker": "^4.0.0-alpha.6",
-		"semantic-release-plus": "^20.0.0"
+		"@semantic-release-plus/docker": "4.0.0-alpha.6",
+		"semantic-release-plus": "20.0.0"
 	},
 	"engines": {
 		"node": ">= 12"
