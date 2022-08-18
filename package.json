@@ -18,6 +18,9 @@
 			"@snickbit/semantic-release"
 		],
 		"plugins": [
+			["@semantic-release/exec", {
+				"prepareCmd": "pnpm turbo run prod && docker build -t snickbit/polymine ."
+			}],
 			[
 				"@semantic-release-plus/docker",
 				{
