@@ -8,7 +8,6 @@
 		"clean": "pnpm run clean:builds && pnpm run clean:modules",
 		"clean:builds": "turbo run clean",
 		"clean:modules": "shx rm -rf **/node_modules",
-		"depcheck": "turbo run depcheck",
 		"fix": "eslint **/*.{ts,json} --cache --color --fix",
 		"lint": "eslint **/*.{ts,json} --cache --color",
 		"prod": "turbo run prod fix depcheck",
@@ -20,6 +19,12 @@
 		],
 		"plugins": [
 			[
+				"@semantic-release/exec",
+				{
+					"prepareCmd": "pnpm turbo run prod && docker build -t snickbit/polymine ."
+				}
+			],
+			[
 				"@semantic-release-plus/docker",
 				{
 					"name": "snickbit/polymine"
@@ -29,6 +34,7 @@
 	},
 	"devDependencies": {
 		"@semantic-release-plus/docker": "4.0.0-alpha.6",
+		"@semantic-release/exec": "6.0.3",
 		"@snickbit/eslint-config": "0.0.10",
 		"@snickbit/semantic-release": "0.1.2",
 		"@types/node": "18.7.1",

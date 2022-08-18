@@ -10,6 +10,9 @@
 		"//#depcheck": {
 			"outputs": []
 		},
+		"prod": {
+			"outputs": []
+		},
 		"clean": {
 			"outputs": []
 		}
