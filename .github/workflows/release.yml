@@ -3,7 +3,6 @@ name: Release
 on:
   push:
     branches:
-      - fix-workflow # todo: remove testing branch before merge
       - main
 
 jobs:
@@ -30,4 +29,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        run: echo "pnpm semantic-release" # todo: remove echo before merge
+        run: pnpm semantic-release
