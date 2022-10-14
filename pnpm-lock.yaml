@@ -34,7 +34,7 @@ importers:
       '@types/node': 18.7.1
       depcheck: 1.4.3
       dockerode: 3.3.3
-      nodemon: 2.0.19
+      nodemon: 2.0.20
       raknet: 1.8.0
       shx: 0.3.4
       tsup: 6.2.2
@@ -48,7 +48,7 @@ importers:
     devDependencies:
       '@types/node': 18.7.1
       depcheck: 1.4.3
-      nodemon: 2.0.19
+      nodemon: 2.0.20
       shx: 0.3.4
       tsup: 6.2.2_typescript@4.7.4
       typescript: 4.7.4
@@ -3071,11 +3071,10 @@ packages:
     engines: {node: '>=10.18.0'}
     dev: false
 
-  /nodemon/2.0.19:
-    resolution: {integrity: sha512-4pv1f2bMDj0Eeg/MhGqxrtveeQ5/G/UVe9iO6uTZzjnRluSA4PVWf8CW99LUPwGB3eNIA7zUFoP77YuI7hOc0A==}
+  /nodemon/2.0.20:
+    resolution: {integrity: sha512-Km2mWHKKY5GzRg6i1j5OxOHQtuvVsgskLfigG25yTtbyfRGn/GNvIbRyOf1PSCKJ2aT/58TiuUsuOU5UToVViw==}
     engines: {node: '>=8.10.0'}
     hasBin: true
-    requiresBuild: true
     dependencies:
       chokidar: 3.5.3
       debug: 3.2.7_supports-color@5.5.0
