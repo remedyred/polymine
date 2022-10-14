@@ -37,7 +37,7 @@ importers:
       nodemon: 2.0.20
       raknet: 1.8.0
       shx: 0.3.4
-      tsup: 6.2.2
+      tsup: 6.2.3
       typescript: 4.7.4
     dependencies:
       '@snickbit/node-cli': 3.0.24
@@ -50,7 +50,7 @@ importers:
       depcheck: 1.4.3
       nodemon: 2.0.20
       shx: 0.3.4
-      tsup: 6.2.2_typescript@4.7.4
+      tsup: 6.2.3_typescript@4.7.4
       typescript: 4.7.4
 
 packages:
@@ -1159,8 +1159,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /bundle-require/3.0.4_esbuild@0.15.2:
-    resolution: {integrity: sha512-VXG6epB1yrLAvWVQpl92qF347/UXmncQj7J3U8kZEbdVZ1ZkQyr4hYeL/9RvcE8vVVdp53dY78Fd/3pqfRqI1A==}
+  /bundle-require/3.1.0_esbuild@0.15.2:
+    resolution: {integrity: sha512-IIXtAO7fKcwPHNPt9kY/WNVJqy7NDy6YqJvv6ENH0TOZoJ+yjpEsn1w40WKZbR2ibfu5g1rfgJTvmFHpm5aOMA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     peerDependencies:
       esbuild: '>=0.13'
@@ -4361,8 +4361,8 @@ packages:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
 
-  /tsup/6.2.2_typescript@4.7.4:
-    resolution: {integrity: sha512-vJ9IAdif4GKAz2XMZzjX1hNqhBezJWXjm0qeQEoI7y//a64cxgCF8178eTMV4jBu7YNKnfAPpPSuyXW4mN+9rA==}
+  /tsup/6.2.3_typescript@4.7.4:
+    resolution: {integrity: sha512-J5Pu2Dx0E1wlpIEsVFv9ryzP1pZ1OYsJ2cBHZ7GrKteytNdzaSz5hmLX7/nAxtypq+jVkVvA79d7S83ETgHQ5w==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
@@ -4377,7 +4377,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      bundle-require: 3.0.4_esbuild@0.15.2
+      bundle-require: 3.1.0_esbuild@0.15.2
       cac: 6.7.12
       chokidar: 3.5.3
       debug: 4.3.4
