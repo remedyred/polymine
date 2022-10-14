@@ -55,8 +55,8 @@ cli()
 
 			promise.then(response => {
 				$out.error('Promise error response', response)
-			}).catch(err => {
-				$out.error('Promise rejection', err)
+			}).catch(error => {
+				$out.error('Promise rejection', error)
 			}).finally(() => {
 				gracefulShutdown()
 			})
@@ -67,7 +67,7 @@ cli()
 
 			gracefulShutdown()
 		})
-	}).catch(err => $out.error(err))
+	}).catch(error => $out.error(error))
 
 function gracefulShutdown() {
 	$out.info('Graceful shutdown on SIGTERM')
@@ -87,7 +87,7 @@ function parseUnconnectedPing(data) {
 			return null
 		}
 		return parsed
-	} catch (error) {
+	} catch {
 		$out.error(`Listener: Ignoring unexpected/invalid packet on listen port. Do you have a client that has a manually configured server pointing to port 19132?`)
 		return null
 	}

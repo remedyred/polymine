@@ -46,19 +46,19 @@ export class Server {
 
 		const configuredInternalPort = info.Config.Labels['polymine.internal-port']
 		if (configuredInternalPort) {
-			this.internalPort = parseInt(configuredInternalPort)
+			this.internalPort = Number.parseInt(configuredInternalPort)
 		}
 
 		for (const [key, entries] of Object.entries(info.NetworkSettings.Ports)) {
 			if (key && entries) {
 				const matches = key.match(/^(\d+)\/udp$/)
 				if (matches) {
-					const internalPort = parseInt(matches[1])
+					const internalPort = Number.parseInt(matches[1])
 					if (!this.privatePort) {
 						this.privatePort = internalPort
 					}
 					if (entries.length > 0 && entries[0].HostPort) {
-						this.portMappings.push(new PortMapping(internalPort, parseInt(entries[0].HostPort)))
+						this.portMappings.push(new PortMapping(internalPort, Number.parseInt(entries[0].HostPort)))
 					}
 				}
 			}

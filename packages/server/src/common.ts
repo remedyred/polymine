@@ -7,9 +7,9 @@ import Connector from './connector'
 export const $out = new Out('polymine')
 
 export const $config = {
-	port: parseInt(process.env.POLYMINE_PORT || '19132'),
-	discovery_interval: parseInt(String(process.env.POLYMINE_DISCOVERY_INTERVAL || '0')),
-	ping_interval: Math.max(parseInt(String(process.env.POLYMINE_PING_INTERVAL || '1000')), 100)
+	port: Number.parseInt(process.env.POLYMINE_PORT || '19132'),
+	discovery_interval: Number.parseInt(String(process.env.POLYMINE_DISCOVERY_INTERVAL || '0')),
+	ping_interval: Math.max(Number.parseInt(String(process.env.POLYMINE_PING_INTERVAL || '1000')), 100)
 }
 
 if (!$config.port) {
@@ -27,5 +27,5 @@ export const parser = createDeserializer(true)
 export const serializer = createSerializer(true)
 
 export function cleanServerName(server_name): string {
-	return server_name.replace(/[^a-zA-Z\d_-]/g, '')
+	return server_name.replace(/[^\w-]/g, '')
 }

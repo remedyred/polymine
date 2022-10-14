@@ -74,7 +74,7 @@ export default class Connector extends EventEmitter {
 				return null
 			}
 			return parsed
-		} catch (error) {
+		} catch {
 			this.out.error(`Connector: Ignoring unexpected/invalid packet on listen port.`)
 		}
 	}

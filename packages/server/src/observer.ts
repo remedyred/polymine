@@ -108,7 +108,7 @@ export default class Observer extends EventEmitter {
 			.map(info => new Server(info))
 
 		for (const [id, server] of Object.entries(this.servers)) {
-			if (!active_servers.find(s => s.id === id)) {
+			if (!active_servers.some(s => s.id === id)) {
 				this.removeServer(server)
 			}
 		}
