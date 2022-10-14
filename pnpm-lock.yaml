@@ -7,7 +7,7 @@ importers:
       '@semantic-release-plus/docker': 4.0.0-alpha.6
       '@semantic-release/exec': 6.0.3
       '@snickbit/eslint-config': 1.3.2
-      '@snickbit/semantic-release': 0.1.2
+      '@snickbit/semantic-release': 0.2.1
       '@types/node': 18.7.1
       depcheck: 1.4.3
       semantic-release-plus: 20.0.0
@@ -18,7 +18,7 @@ importers:
       '@semantic-release-plus/docker': 4.0.0-alpha.6
       '@semantic-release/exec': 6.0.3_semantic-release@19.0.3
       '@snickbit/eslint-config': 1.3.2_qugx7qdu5zevzvxaiqyxfiwquq
-      '@snickbit/semantic-release': 0.1.2_semantic-release@19.0.3
+      '@snickbit/semantic-release': 0.2.1_semantic-release@19.0.3
       '@types/node': 18.7.1
       depcheck: 1.4.3
       semantic-release-plus: 20.0.0_semantic-release@19.0.3
@@ -640,8 +640,8 @@ packages:
     engines: {node: '>= 12'}
     dev: false
 
-  /@snickbit/semantic-release/0.1.2_semantic-release@19.0.3:
-    resolution: {integrity: sha512-O+rlSt+95cuqV9tkqPMtD5C2FoRAoa52W+uTDJgBxT+hGApeUFQxgWpyobfy4HUsEh/A1hwj83gxEzjEoh+F5w==}
+  /@snickbit/semantic-release/0.2.1_semantic-release@19.0.3:
+    resolution: {integrity: sha512-S8CuACfFbN+twLnwAwjGqoCLJUho8BV5osmSYyedPy7cE6UI0BOiKLEakr/s+Iw31H9Ifz9V2p9o+kLTEFdqBg==}
     engines: {node: '>= 12'}
     dependencies:
       '@semantic-release/changelog': 6.0.1_semantic-release@19.0.3
