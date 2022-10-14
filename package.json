@@ -35,7 +35,7 @@
 	"devDependencies": {
 		"@semantic-release-plus/docker": "4.0.0-alpha.6",
 		"@semantic-release/exec": "6.0.3",
-		"@snickbit/eslint-config": "0.0.10",
+		"@snickbit/eslint-config": "0.1.2",
 		"@snickbit/semantic-release": "0.1.2",
 		"@types/node": "18.7.1",
 		"depcheck": "1.4.3",
