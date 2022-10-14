@@ -29,7 +29,7 @@ importers:
   packages/server:
     specifiers:
       '@snickbit/node-cli': 3.0.4
-      '@snickbit/node-utilities': 4.4.6
+      '@snickbit/node-utilities': 4.4.10
       '@snickbit/out': 2.0.48
       '@types/node': 18.7.1
       depcheck: 1.4.3
@@ -41,7 +41,7 @@ importers:
       typescript: 4.7.4
     dependencies:
       '@snickbit/node-cli': 3.0.4
-      '@snickbit/node-utilities': 4.4.6
+      '@snickbit/node-utilities': 4.4.10
       '@snickbit/out': 2.0.48
       dockerode: 3.3.3
       raknet: 1.8.0
@@ -591,19 +591,19 @@ packages:
     resolution: {integrity: sha512-z9trPbhQCoqh38ptSvwx0U6yZF1RCx6RnnSwEnJs63lSaYv2yCfCXzt0fwkn6GSG0127za+7szU5M4wRLVKj+g==}
     engines: {node: '>= 12'}
     dependencies:
-      '@snickbit/node-utilities': 4.4.6
+      '@snickbit/node-utilities': 4.4.10
       '@snickbit/out': 2.0.48
       '@snickbit/utilities': 3.3.0
       lilconfig: 2.0.6
       yargs-parser: 21.1.1
     dev: false
 
-  /@snickbit/node-utilities/4.4.6:
-    resolution: {integrity: sha512-DsKWpObdunYPkCNOS6xdtVgbEqa9qMQniOZE3jf98AmESgbezbhU+91+0aOG0Q6vRdjF+7K08Xjl7R4ixbWldg==}
+  /@snickbit/node-utilities/4.4.10:
+    resolution: {integrity: sha512-Auq7DSIWHNQ+2lv5rTeEYL4pvmDdbEaioMScoW+yoMS39aXnHR7V5mIm1AlBSz04gB9E99xaBdWtttNEgSSHyw==}
     engines: {node: '>= 12'}
     dependencies:
       '@snickbit/out': 2.0.48
-      '@snickbit/utilities': 3.3.1
+      '@snickbit/utilities': 3.4.15
       ansi-styles-template: 1.0.0
       cli-progress: 3.11.2
       is-wsl: 2.2.0
@@ -627,11 +627,6 @@ packages:
 
   /@snickbit/plural/0.0.4:
     resolution: {integrity: sha512-l+8snpVb8ebef5vmY06B6Q8V0X7F4wtjZOskVSKOh6fNyO8o6tS6N0N8UHdJXsE7AYM4p0Vd4qIk2KrSSDynRw==}
-    engines: {node: '>= 12'}
-    dev: false
-
-  /@snickbit/plural/0.0.5:
-    resolution: {integrity: sha512-cU0brdILQdpe6MJ6MoqV5c5/1xvHcG8BYnJV6UQHJWpNOo/6klgq1Pqt5AO/DGxVz9j4z+F7JN7woXXa9o8GQg==}
     engines: {node: '>= 12'}
     dev: false
 
@@ -663,15 +658,6 @@ packages:
     engines: {node: '>= 12'}
     dependencies:
       '@snickbit/plural': 0.0.4
-      just-camel-case: 6.0.1
-      nanoid: 3.3.4
-    dev: false
-
-  /@snickbit/utilities/3.3.1:
-    resolution: {integrity: sha512-wPteAd4d3OXFV+ah37uDWIF9rmhQzWLS0zSxc4/19VQ+tGgUky2o7/nDhhjHHmYWIYOZ9MOrhz6yW0TZ3GF5bg==}
-    engines: {node: '>= 12'}
-    dependencies:
-      '@snickbit/plural': 0.0.5
       just-camel-case: 6.0.1
       nanoid: 3.3.4
     dev: false
