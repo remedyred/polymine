@@ -28,7 +28,7 @@
 		"raknet": "1.8.0"
 	},
 	"devDependencies": {
-		"@types/node": "18.7.1",
+		"@types/node": "18.11.9",
 		"depcheck": "1.4.3",
 		"nodemon": "2.0.19",
 		"shx": "0.3.4",
