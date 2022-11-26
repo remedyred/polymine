@@ -36,12 +36,12 @@
 		"@semantic-release-plus/docker": "4.0.0-alpha.6",
 		"@semantic-release/exec": "6.0.3",
 		"@snickbit/eslint-config": "0.1.2",
-		"@snickbit/semantic-release": "0.1.2",
+		"@snickbit/semantic-release": "0.2.1",
 		"@types/node": "18.11.9",
 		"depcheck": "1.4.3",
 		"semantic-release-plus": "20.0.0",
 		"shx": "0.3.4",
-		"turbo": "1.4.3",
+		"turbo": "1.6.3",
 		"typescript": "4.7.4"
 	},
 	"engines": {
