@@ -37,7 +37,7 @@
 		"@semantic-release/exec": "6.0.3",
 		"@snickbit/eslint-config": "0.1.2",
 		"@snickbit/semantic-release": "0.2.1",
-		"@types/node": "18.13.0",
+		"@types/node": "18.14.0",
 		"depcheck": "1.4.3",
 		"semantic-release-plus": "20.0.0",
 		"shx": "0.3.4",
