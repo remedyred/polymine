@@ -22,7 +22,7 @@
 	},
 	"dependencies": {
 		"@snickbit/node-cli": "3.0.24",
-		"@snickbit/node-utilities": "4.4.20",
+		"@snickbit/node-utilities": "4.7.1",
 		"@snickbit/out": "2.0.48",
 		"dockerode": "3.3.4",
 		"raknet": "1.8.0"
